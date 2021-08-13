@@ -5,9 +5,9 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!
-Am Just A Advance Auto Filter Bot.😉 You Can't Use Me.I Specially Maded For My Group.
+\n\nAm Just A Advance Auto Filter Bot.😉 You Can't Use Me.I Specially Maded For My Group.
 
-🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <a href="https://t.me/Vivek_Kerala">Vivek</a><a href="https://t.me/Blur_Glass">KaneAntony</a></b>"""    
+🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <a href="https://t.me/Vivek_Kerala">Vivek</a> & <a href="https://t.me/Blur_Glass">KaneAntony</a></b>"""    
     
     HELP_TEXT = """
 <b><i><u>How To Use Me!?</u></i></b>
@@ -38,8 +38,6 @@ Am Just A Advance Auto Filter Bot.😉 You Can't Use Me.I Specially Maded For My
             -> <code>Configure</code> - Button Will Helps You To Change No. of Pages/ Buttons Per Page/ Total Result Without Acutally Editing The Repo... Also It Provide Option To Enable/Disable For Showing Invite Link In Each Results
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
-            
-@CrazyBotsz
 """
     
     ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
