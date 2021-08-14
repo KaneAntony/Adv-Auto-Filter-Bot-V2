@@ -9,6 +9,8 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
+START_IMG = "https://telegra.ph/file/cf27a9aec8a99467475df.jpg"
+
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     
@@ -103,7 +105,7 @@ async def start(bot, update):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
-        img="https://telegra.ph/file/cf27a9aec8a99467475df.jpg",
+        img=START_IMG,
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(
                 update.from_user.first_name),
