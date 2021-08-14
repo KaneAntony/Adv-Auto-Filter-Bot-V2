@@ -92,6 +92,10 @@ async def start(bot, update):
         InlineKeyboardButton('⚙️ HELP', callback_data='help')
     ],
     [
+        InlineKeyboardButton('🎬 Channel', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'),
+        InlineKeyboardButton('Group 💬', url='https://t.me/CinemaaKottaka')
+    ],
+    [
         InlineKeyboardButton('🤖 About', callback_data='about'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
@@ -110,7 +114,7 @@ async def start(bot, update):
 
 admins = 1092144915, 1414146649
 
-@Client.on_message(filters.command(["help"]) & filters.user(admins), group=1)
+@Client.on_message(filters.command(["help"]) & filters.users(admins), group=1)
 async def ownerhelp(bot, update):
     buttons = [[
         InlineKeyboardButton('Home 🏠', callback_data='start'),
