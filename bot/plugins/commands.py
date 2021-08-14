@@ -104,7 +104,7 @@ async def start(bot, update):
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
+    await bot.send_message.reply_photo(
         img=START_IMG,
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(
