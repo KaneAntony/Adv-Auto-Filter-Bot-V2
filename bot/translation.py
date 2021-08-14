@@ -5,7 +5,9 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!
-\nAm Just A Advance Auto Filter Bot.😉 You Can't Use Me.I Specially Maded For My Group.
+\n ഞാൻ @CinemaaKottaka എന്ന ഗ്രൂപ്പിൽ മൂവീസ് കൊടുക്കുന്ന ബോട്ട് ആണ് 
+ 
+എന്നെ മറ്റു ഗ്രൂപ്പിൽ ഒന്നും ഉപയോഗിക്കാൻ കഴിയുകയില്ല.
 
 🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <a href="https://t.me/Vivek_Kerala">Vivek</a> & <a href="https://t.me/Blur_Glass">KaneAntony</a></b>"""    
     
