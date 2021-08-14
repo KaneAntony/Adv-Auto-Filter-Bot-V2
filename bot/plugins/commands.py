@@ -6,6 +6,7 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
+from config import ADMINS
 
 db = Database()
 
@@ -111,8 +112,6 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
-
-ADMINS=1092144915, 1414146649
 
 @Client.on_message(filters.command(["help"]) & filters.private, filters.user(ADMINS), group=1)
 async def ownerhelp(bot, update):
