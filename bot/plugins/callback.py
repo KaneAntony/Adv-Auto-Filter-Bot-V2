@@ -1639,13 +1639,12 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
-        ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-        ],[
-            InlineKeyboardButton('Help ⚙', callback_data="help")
-        ]]
+            InlineKeyboardButton('⚙️ HELP', callback_data='help')
+    ],
+    [
+        InlineKeyboardButton('🤖 About', callback_data='about'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
+    ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
@@ -1659,8 +1658,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('About 🚩', callback_data='about')
+            InlineKeyboardButton('Home 🏘', callback_data='start'),
+            InlineKeyboardButton('About 👨🏻‍🔬', callback_data='about')
         ],[
             InlineKeyboardButton('Close 🔐', callback_data='close')
         ]]
@@ -1677,7 +1676,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
+            InlineKeyboardButton('Home 🏘', callback_data='start'),
             InlineKeyboardButton('Close 🔐', callback_data='close')
         ]]
         
