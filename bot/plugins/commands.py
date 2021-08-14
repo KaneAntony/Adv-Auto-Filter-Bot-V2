@@ -112,7 +112,7 @@ async def start(bot, update):
         reply_to_message_id=update.message_id
     )
 
-admins = 1092144915, 1414146649
+ADMINS = 1092144915, 1414146649
 
 @Client.on_message(filters.command(["help"]) & filters.user(ADMINS), group=1)
 async def ownerhelp(bot, update):
