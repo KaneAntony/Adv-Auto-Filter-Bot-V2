@@ -9,8 +9,6 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-START_IMG = "https://telegra.ph/file/cf27a9aec8a99467475df.jpg"
-
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     
@@ -104,8 +102,7 @@ async def start(bot, update):
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message.reply_photo(
-        img=START_IMG,
+    await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(
                 update.from_user.first_name),
@@ -115,7 +112,7 @@ async def start(bot, update):
         reply_to_message_id=update.message_id
     )
 
-ADMINS = 1092144915, 1414146649
+ADMINS=1092144915, 1414146649
 
 @Client.on_message(filters.command(["help"]) & filters.private, filters.user(ADMINS), group=1)
 async def ownerhelp(bot, update):
