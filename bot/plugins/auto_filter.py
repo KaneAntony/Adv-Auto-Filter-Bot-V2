@@ -128,8 +128,8 @@ async def auto_filter(bot, update):
     else: 
          Send_message = await bot.send_message(
          chat_id=update.chat.id,
-         text="<b>Couldn't Find This Movie☹️ Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❕CHANNEL❕", url="https://t.me/Movie_links_Onlyy")]]),
+         text="<b>Couldn't Find This Movie☹️ Try Again\n\nഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Search On Google", url="http://google.com/")]]),
          parse_mode="html",
          disable_web_page_preview=True,
          reply_to_message_id=update.message_id
