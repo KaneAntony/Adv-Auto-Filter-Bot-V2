@@ -30,7 +30,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = caption,
+                caption="<code>" + file_name + """</code>\n\n<b>© Powered by @FilmStats</b>""",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -89,14 +89,13 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚙️ HELP', callback_data='help')
+        InlineKeyboardButton('⚙️ Help', callback_data='help')
     ],
     [
         InlineKeyboardButton('🎬 Channel', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'),
         InlineKeyboardButton('Group 💬', url='https://t.me/CinemaaKottaka')
     ],
     [
-        InlineKeyboardButton('🤖 About', callback_data='about'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
     
