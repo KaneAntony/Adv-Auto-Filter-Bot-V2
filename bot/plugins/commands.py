@@ -111,7 +111,7 @@ async def start(bot, update):
         reply_to_message_id=update.message_id
     )
 
-ADMINS = 1092144915,1414146649
+ADMINS = "1092144915,1414146649"
 
 @Client.on_message(filters.command(["help"]) & filters.private, filters.user(ADMINS), group=1)
 async def ownerhelp(bot, update):
@@ -150,6 +150,14 @@ async def help(bot, update):
         reply_markup=reply_markup,
         parse_mode="html",
         disable_web_page_preview=true,
+        reply_to_message_id=update.message_id
+    )
+
+@Client.on_message(filters.text)
+async def allmv(bot, update):
+
+    await bot.sent_message(
+        text="Join On @FilmHouseFilms",
         reply_to_message_id=update.message_id
     )
 
