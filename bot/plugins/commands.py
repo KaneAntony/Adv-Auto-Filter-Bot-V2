@@ -153,14 +153,6 @@ async def help(bot, update):
         reply_to_message_id=update.message_id
     )
 
-@Client.on_message(filters.text)
-async def allmv(bot, update):
-
-    await bot.sent_message(
-        text="Join On @FilmHouseFilms",
-        reply_to_message_id=update.message_id
-    )
-
 
 @Client.on_message(filters.command(["about"]) & filters.private, group=1)
 async def about(bot, update):
