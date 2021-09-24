@@ -16,14 +16,6 @@ ACTIVE_CHATS = {}
 db = Database()
 
 @Bot.on_message(filters.text & filters.group & ~filters.bot, group=0)
-async def autoai(bot, update):
-    
-    await(
-        text="Join On @cinemaakottaka",
-        reply_to_message_id=update.message_id
-    )
-
-@Bot.on_message(filters.text & filters.group & ~filters.bot, group=0)
 async def auto_filter(bot, update):
     """
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
