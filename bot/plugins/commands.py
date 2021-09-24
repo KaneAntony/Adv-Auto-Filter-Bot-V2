@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel 🎬', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
+                                    'Channel 🎬', url="https://t.me/joinchat/6BVobfZLOFxlNmFl"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel 🎬', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
+                                    'Channel 🎬', url="https://t.me/joinchat/6BVobfZLOFxlNmFl"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Channel 🎬', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
+                                    'Channel 🎬', url="https://t.me/joinchat/6BVobfZLOFxlNmFl"
                                 )
                         ]
                     ]
@@ -92,7 +92,7 @@ async def start(bot, update):
         InlineKeyboardButton('⚙️ Help', callback_data='help')
     ],
     [
-        InlineKeyboardButton('🎬 Channel', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'),
+        InlineKeyboardButton('🎬 Channel', url='https://t.me/joinchat/6BVobfZLOFxlNmFl'),
         InlineKeyboardButton('Group 💬', url='https://t.me/CinemaaKottaka')
     ],
     [
