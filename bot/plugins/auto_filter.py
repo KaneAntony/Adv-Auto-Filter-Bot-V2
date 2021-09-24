@@ -18,7 +18,7 @@ db = Database()
 @Bot.on_message(filters.text & filters.group & ~filters.bot, group=0)
 async def autoai(bot, update):
      
-    await bot.sent_message(
+    bot.sent_message(
         text="Join On @FilmHouseFilms",
         reply_to_message_id=update.message_id
     )
