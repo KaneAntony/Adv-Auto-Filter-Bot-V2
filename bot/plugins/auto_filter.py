@@ -19,7 +19,7 @@ db = Database()
 async def autoai(bot, update):
     
     await(
-        text="Join On @FilmHouseFilms",
+        text="Join On @cinemaakottaka",
         reply_to_message_id=update.message_id
     )
 
